@@ -1,0 +1,102 @@
+Decision Tree Analysis Results
+==============================
+
+(1) Positive Threshold : 0.03396962500000007
+(2) Negative Threshold : -0.007938709000000101
+
+Decision Rules (text form):
+------------------------------
+|--- subtract_fall_melt <= -0.00118
+|   |--- subtract_fall_melt <= -0.00285
+|   |   |--- subtract_fall_melt <= -0.00474
+|   |   |   |--- subtract_fall_melt <= -0.00570
+|   |   |   |   |--- sum_fall_melt <= 0.01898
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- sum_fall_melt >  0.01898
+|   |   |   |   |   |--- class: 2
+|   |   |   |--- subtract_fall_melt >  -0.00570
+|   |   |   |   |--- sum_fall_melt <= 0.00939
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- sum_fall_melt >  0.00939
+|   |   |   |   |   |--- class: 2
+|   |   |--- subtract_fall_melt >  -0.00474
+|   |   |   |--- sum_fall_melt <= 0.01053
+|   |   |   |   |--- sum_fall_melt <= 0.00487
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- sum_fall_melt >  0.00487
+|   |   |   |   |   |--- class: 2
+|   |   |   |--- sum_fall_melt >  0.01053
+|   |   |   |   |--- subtract_fall_melt <= -0.00407
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- subtract_fall_melt >  -0.00407
+|   |   |   |   |   |--- class: 2
+|   |--- subtract_fall_melt >  -0.00285
+|   |   |--- sum_fall_melt <= 0.00285
+|   |   |   |--- subtract_fall_melt <= -0.00166
+|   |   |   |   |--- subtract_fall_melt <= -0.00201
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- subtract_fall_melt >  -0.00201
+|   |   |   |   |   |--- class: 2
+|   |   |   |--- subtract_fall_melt >  -0.00166
+|   |   |   |   |--- sum_fall_melt <= 0.00167
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- sum_fall_melt >  0.00167
+|   |   |   |   |   |--- class: 2
+|   |   |--- sum_fall_melt >  0.00285
+|   |   |   |--- subtract_fall_melt <= -0.00246
+|   |   |   |   |--- subtract_fall_melt <= -0.00262
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- subtract_fall_melt >  -0.00262
+|   |   |   |   |   |--- class: 2
+|   |   |   |--- subtract_fall_melt >  -0.00246
+|   |   |   |   |--- sum_fall_melt <= 0.01535
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- sum_fall_melt >  0.01535
+|   |   |   |   |   |--- class: 1
+|--- subtract_fall_melt >  -0.00118
+|   |--- subtract_fall_melt <= 0.01059
+|   |   |--- sum_fall_melt <= 0.00002
+|   |   |   |--- subtract_fall_melt <= -0.00001
+|   |   |   |   |--- sum_fall_melt <= 0.00002
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- sum_fall_melt >  0.00002
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- subtract_fall_melt >  -0.00001
+|   |   |   |   |--- subtract_fall_melt <= 0.00001
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- subtract_fall_melt >  0.00001
+|   |   |   |   |   |--- class: 1
+|   |   |--- sum_fall_melt >  0.00002
+|   |   |   |--- subtract_fall_melt <= -0.00086
+|   |   |   |   |--- sum_fall_melt <= 0.00121
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- sum_fall_melt >  0.00121
+|   |   |   |   |   |--- class: 2
+|   |   |   |--- subtract_fall_melt >  -0.00086
+|   |   |   |   |--- subtract_fall_melt <= 0.00785
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- subtract_fall_melt >  0.00785
+|   |   |   |   |   |--- class: 2
+|   |--- subtract_fall_melt >  0.01059
+|   |   |--- subtract_fall_melt <= 0.01342
+|   |   |   |--- subtract_fall_melt <= 0.01138
+|   |   |   |   |--- subtract_fall_melt <= 0.01136
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- subtract_fall_melt >  0.01136
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- subtract_fall_melt >  0.01138
+|   |   |   |   |--- subtract_fall_melt <= 0.01342
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- subtract_fall_melt >  0.01342
+|   |   |   |   |   |--- class: 1
+|   |   |--- subtract_fall_melt >  0.01342
+|   |   |   |--- subtract_fall_melt <= 0.01845
+|   |   |   |   |--- sum_fall_melt <= 0.01599
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- sum_fall_melt >  0.01599
+|   |   |   |   |   |--- class: 2
+|   |   |   |--- subtract_fall_melt >  0.01845
+|   |   |   |   |--- sum_fall_melt <= 0.01885
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- sum_fall_melt >  0.01885
+|   |   |   |   |   |--- class: 2
